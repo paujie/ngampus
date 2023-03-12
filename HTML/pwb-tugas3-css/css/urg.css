@@ -1,0 +1,964 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+    background-color: white;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.nav-kiri {
+    width: 372px;
+    height: 30px;
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    top: 38px;
+    left: 100px;
+    overflow: hidden;
+    }
+
+.nav-kanan {
+    width: 189px;
+    height: 30px;
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    top: 38px;
+    left: 1631px;
+    overflow: hidden;
+}
+
+.isi-nav {
+    display: flex;
+    color: black;
+    font-family: Inter;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+    }
+
+.isi-nav.login {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 137px;
+    top: 3px;
+}
+
+.isi-nav:hover {
+    text-decoration: underline;
+}
+
+.bulet-isi {
+    width: 7px;
+    color: #000;
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: right;
+}
+.bulet-cart {
+    width: 30px;
+    height: 30px;
+    background: #A1E901;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 57px;
+    border-radius: 50%;
+}
+
+.urg {
+    width: 95px;
+    color: black;
+    position: absolute;
+    top: 28px;
+    left: 913px;
+    font-family: Jiro;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+
+.aktif {
+    text-decoration: underline;
+    font-weight: Bold;
+}
+
+
+.hover {
+    text-decoration: underline;
+}
+
+.slider {
+    width: 100%;
+    height: 666px;
+    background: url(../img/banner1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.indi-kotak {
+    width: 110px;
+    height: 10px;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    top: 616px;
+    left: 1740px;
+    overflow: hidden;
+    justify-content: middle;
+    align-items: center;
+}
+
+.indi {
+    width: 20px;
+    height: 10px;
+    background: #D9D9D9;
+    opacity: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.slider-isi.buy {
+    width: 258px;
+    color: white;
+    position: absolute;
+    top: 540px;
+    left: 100px;
+    font-family: General Sans;
+    font-weight: Medium;
+    font-size: 64px;
+    opacity: 1;
+    text-align: left;
+}
+
+.slider-isi.desc {
+    width: 496px;
+    color: white;
+    position: absolute;
+    top: 392px;
+    left: 101px;
+    font-family: General Sans;
+    font-weight: Medium;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+}
+
+.slider-isi.fear {
+    width: 276px;
+    color: rgba(161, 233, 1, 1);
+    position: absolute;
+    top: 446px;
+    left: 201px;
+    font-family: Brick;
+    font-weight: Regular;
+    font-size: 64px;
+    opacity: 1;
+    text-align: left;
+}
+
+.slider-bawah {
+    width: 100%;
+    height: 60px;
+    background: black;
+    opacity: 1;
+    position: absolute;
+    top: 766px;
+    left: 0px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-bawah.kotak {
+    width: 1720px;
+    height: 48px;
+    background-color: black;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    top: 6px;
+    left: 100px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.bintang {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: rgba(161,233,1,1);
+    opacity: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.bintang.text{
+    display: flex;
+    width: 21px;
+    color: rgba(0,0,0,1);
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+
+.bintang2 {
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 136px;
+    left: 935px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    overflow: hidden;
+}
+
+.bintang2.text {
+    width: 19px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 7px;
+    left: 14px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+    border: 0px;
+}
+
+.isi-ads {
+    color: white;
+    font-family: SCHABO;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.menu.collection {
+    width: 100%;
+    height: 1250px;
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    top: 866px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.heading.collection{
+    width: 550px;
+    color: black;
+    position: absolute;
+    left: 685px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 64px;
+    opacity: 1;
+    text-align: center;
+}
+
+.kotak-1 {
+    width: 600px;
+    height: 800px;
+    background: url(../img/kotak1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 236px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.kotak-1-box {
+    width: 600px;
+    height: 80px;
+    background: rgba(255,255,255,1);
+    padding: 15px 148px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 1036px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.kotak-text1 {
+    width: 304px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    font-family: Uncut Sans;
+    font-weight: 600;
+    top: 15px;
+    left: 148px;
+    font-size: 40px;
+    opacity: 1;
+    text-align: center;
+}
+
+.kotak-2 {
+    width: 600px;
+    height: 800px;
+    background: url(../img/kotak2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 236px;
+    left: 660px;
+    overflow: hidden;
+}
+
+.kotak-2-box {
+    width: 600px;
+    height: 80px;
+    background: rgba(255,255,255,1);
+    padding: 19px 196px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 1036px;
+    left: 660px;
+    overflow: hidden;
+}
+
+.kotak-text2 {
+    width: 207px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 19px;
+    left: 196px;
+    font-family: Brick;
+    font-weight: 400;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+}
+
+.kotak-3 {
+    width: 600px;
+    height: 800px;
+    background: url(../img/kotak3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 236px;
+    left: 1320px;
+    overflow: hidden;
+}
+
+.kotak-3-box {
+    width: 600px;
+    height: 80px;
+    background: rgba(255,255,255,1);
+    padding: 11px 234px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 1036px;
+    left: 1320px;
+    overflow: hidden;
+}
+
+.kotak-text3 {
+    width: 131px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 11px;
+    left: 234px;
+    font-family: SCHABO;
+    font-size: 48px;
+    opacity: 1;
+    text-align: left;
+}
+
+.seeall {
+    width: 77px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 1166px;
+    left: 922px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+    text-decoration-line: underline;
+}
+
+.break1 {
+    width: 100%;
+    height: 2px;
+    background: rgba(239,239,239,1);
+    opacity: 1;
+    position: absolute;
+    top: 1248px;
+    left: 100px;
+    overflow: hidden;
+}
+
+
+.menu.latest {
+    width: 100%;
+    height: 866px;
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    top: 2166px;
+    left: 0px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.heading.latest{
+    width: 357px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 64px;
+    opacity: 1;
+    text-align: center;
+}
+
+.box-latest {
+    width: 200px;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 68px;
+    left: 1620px;
+    overflow: hidden;
+    border: 2px solid #000000;
+    border-radius: 30px;
+}
+
+.na {
+    width: 106px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 9px;
+    left: 47px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop1 {
+    width: 400px;
+    height: 500px;
+    background: url(../img/drop1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 186px;
+    left: 100px;
+    overflow: hidden;
+}
+
+.drop1text {
+    width: 52px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 716px;
+    left: 274px;
+    font-family: Uncut Sans;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop1prod{
+    width: 360px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 756px;
+    left: 120px;
+    font-family: Uncut Sans;
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop1price{
+    width: 360px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 791px;
+    left: 120px;
+    font-family: Uncut Sans;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop2 {
+    width: 400px;
+    height: 500px;
+    background: url(../img/drop2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 186px;
+    left: 540px;
+    overflow: hidden;
+}
+
+.drop2text {
+    width: 52px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 716px;
+    left: 714px;
+    font-family: Uncut Sans;
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop2prod{
+    width: 360px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 756px;
+    left: 560px;
+    font-family: Uncut Sans;
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop2price{
+    width: 360px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 791px;
+    left: 560px;
+    font-family: Uncut Sans;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop3 {
+    width: 400px;
+    height: 500px;
+    background: url(../img/drop3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 186px;
+    left: 980px;
+    overflow: hidden;
+}
+
+.drop3text {
+    width: 52px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 716px;
+    left: 1154px;
+    font-family: Uncut Sans;
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop3prod{
+    width: 360px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 756px;
+    left: 1000px;
+    font-family: Uncut Sans;
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop3price{
+    width: 360px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 791px;
+    left: 1000px;
+    font-family: Uncut Sans;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop4 {
+    width: 400px;
+    height: 500px;
+    background: url(../img/drop4.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 186px;
+    left: 1420px;
+    overflow: hidden;
+}
+
+.drop4text {
+    width: 52px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 716px;
+    left: 1594px;
+    font-family: Uncut Sans;
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop4prod{
+    width: 360px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 756px;
+    left: 1440px;
+    font-family: Uncut Sans;
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.drop4price{
+    width: 360px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 791px;
+    left: 1440px;
+    font-family: Uncut Sans;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.menu.browse {
+    width: 100%;
+    height: 762px;
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    top: 2982px;
+    left: 0px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.heading.browse {
+    width: 496px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 64px;
+    opacity: 1;
+    text-align: center;
+}
+
+.box-browse {
+    width: 200px;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 48px;
+    left: 1620px;
+    border: 2px solid rgba(0,0,0,1);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+}
+
+
+.br {
+    width: 69px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 60px;
+    left: 1686px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.browse1 {
+    width: 840px;
+    height: 400px;
+    background: url(../img/browse1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 166px;
+    left: 100px;
+    overflow: hidden;
+}
+
+.browse2 {
+    width: 840px;
+    height: 400px;
+    background: url(../img/browse2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 166px;
+    left: 980px;
+    overflow: hidden;
+}
+
+.brw1text {
+    width: 177px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 586px;
+    left: 100px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+}
+
+.brw1mn1 {
+    width: 124px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 660px;
+    left: 100px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.brw1mn2 {
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 660px;
+    left: 254px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.brw2text {
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 586px;
+    left: 980px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+}
+
+.brw2mn1 {
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 660px;
+    left: 980px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.brw2mn2 {
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 660px;
+    left: 1134px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+
+}
+
+.footer  {
+    width: 100%;
+    height: 500px;
+    background: rgba(242,242,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 3790px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 176px;
+    height: 80px;
+    background: url(../img/urg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    overflow: hidden;
+}
+
+.logodesc {
+    width: 490px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 0.5799999833106995;
+    text-align: left;
+}
+
+.copyright {
+    width: 135px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 368px;
+    left: 100px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+
+.menu3 {
+    width: 203px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 100px;
+    left: 1650px;
+    font-family: General Sans;
+    font-weight: 600;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+
+.mn31 {
+    width: 111px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 152px;
+    left: 1707px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+.mn32 {
+    width: 111px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 194px;
+    left: 1708px;
+    font-family: General Sans;
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
