@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kalkulator Jipo Basic</title>
+  </head>
+  <body>
+    <div class="wadah">
+      <div class="kalkulator">
+        <form>
+          <div class="lcd">
+            <input type="text" name="lcd" />
+          </div>
+          <div>
+            <input type="button" value="CL" onclick="lcd.value = ''" />
+            <input
+              type="button"
+              value="DL"
+              onclick="lcd.value = lcd.value.slice(0,-1)"
+            />
+            <input type="button" value="." onclick="lcd.value += '.'" />
+            <input type="button" value="/" onclick="lcd.value += '/'" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="lcd.value += '7'" />
+            <input type="button" value="8" onclick="lcd.value += '8'" />
+            <input type="button" value="9" onclick="lcd.value += '9'" />
+            <input type="button" value="X" onclick="lcd.value += '*'" />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="lcd.value += '4'" />
+            <input type="button" value="5" onclick="lcd.value += '5'" />
+            <input type="button" value="6" onclick="lcd.value += '6'" />
+            <input type="button" value="-" onclick="lcd.value += '-'" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="lcd.value += '1'" />
+            <input type="button" value="2" onclick="lcd.value += '2'" />
+            <input type="button" value="3" onclick="lcd.value += '3'" />
+            <input type="button" value="+" onclick="lcd.value += '+'" />
+          </div>
+          <div>
+            <input type="button" value="0" onclick="lcd.value += '0'" />
+            <input type="button" value="00" onclick="lcd.value += '00'" />
+            <input type="button" value="000" onclick="lcd.value += '000'" />
+            <input
+              type="button"
+              value="="
+              onclick="lcd.value = eval(lcd.value)"
+              class="hasil"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
