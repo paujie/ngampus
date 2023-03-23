@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Russo+One&family=VT323&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.layar {
+  background-color: #252525;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wadah {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  width: 300px;
+  height: 620px;
+
+  background: #47474d;
+  border-radius: 40px;
+}
+
+.lcd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: none;
+
+  width: 260px;
+  height: 200px;
+
+  background: #c1e3c4;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+}
+
+.lcd .isi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: none;
+
+  width: 230px;
+  height: 170px;
+}
+
+.lcd .isi .atas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 230px;
+  height: 40px;
+
+  font-family: "VT323";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+
+  color: #000000;
+}
+
+.lcd .isi .atas button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  width: 40px;
+  height: 40px;
+
+  background: #a3d9a4;
+  border-radius: 15px;
+
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 100%;
+  text-align: center;
+
+  color: #547a59;
+}
+
+.lcd .isi .atas button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.lcd-hasil {
+  width: 230px;
+  height: 64px;
+
+  font-family: "VT323";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  text-align: right;
+  overflow-x: hidden;
+  color: #2b2d2a;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+
+  width: 260px;
+  height: 330px;
+}
+
+.input .baris {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 7px;
+
+  width: 260px;
+  height: 60px;
+}
+
+.input .baris button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 60px;
+  height: 60px;
+  background: #ebe2db;
+  border: none;
+  border-bottom: 2px solid #b0a494;
+  border-radius: 5px;
+
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #454b5a;
+}
+
+.input .baris button a {
+  text-decoration: none;
+  color: white;
+}
+
+.input .baris button:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+#jipo {
+  width: 127px;
+  height: 60px;
+  background: #424242;
+  border: none;
+  border-bottom: 2px solid #1c1c1c;
+  color: #ffffff;
+}
+
+#hasil {
+  width: 127px;
+  height: 60px;
+  background: #30d153;
+  border: none;
+  border-bottom: 2px solid #179032;
+  color: #ffffff;
+}
+
+#operator {
+  color: #ffffff;
+  background: #d13f30;
+  border-bottom: 2px solid #902417;
+}
+
+#clear {
+  color: #ffffff;
+  background: #ebb529;
+  border-bottom: 2px solid #ba9128;
+}
+
+.feather {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}

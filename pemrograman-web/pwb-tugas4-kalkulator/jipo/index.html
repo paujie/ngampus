@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="img/skarb.png" />
+    <title>Kalkulator Jipo</title>
+  </head>
+  <body>
+    <div class="layar">
+      <div class="wadah">
+        <div class="lcd">
+          <div class="lcd isi">
+            <div class="lcd isi atas">
+              <p>.jipo-gamers-ganteng-idaman</p>
+              <button id="hapus"><i data-feather="delete"></i></button>
+            </div>
+            <div class="lcd-hasil" id="lcd-hasil">0</div>
+          </div>
+        </div>
+
+        <div class="input">
+          <div class="input baris">
+            <button id="jipo" value="JIPO">
+              <a href="https://github.com/paujie" target="_blank"
+                ><i data-feather="github"></i> JIPO</a
+              >
+            </button>
+            <button id="clear" value="">C</button>
+            <button id="operator" value="/">/</button>
+          </div>
+          <div class="input baris">
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button id="operator" value="*">X</button>
+          </div>
+          <div class="input baris">
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button id="operator" value="-">-</button>
+          </div>
+          <div class="input baris">
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button id="operator" value="+">+</button>
+          </div>
+          <div class="input baris">
+            <button value="0">0</button>
+            <button value=".">.</button>
+            <button id="hasil">Hasil</button>
+          </div>
+        </div>
+
+        <img src="img/skarb.png" alt="SKARB" />
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+      jipo();
+    </script>
+  </body>
+</html>
